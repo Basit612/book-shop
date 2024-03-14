@@ -1,7 +1,8 @@
 
 import { useEffect, useState } from "react";
 import "./App.css";
-import Title from "./Title";
+import Title from "./assets/Title";
+
 
 function App() {
  const [products, setProducts] =useState([]);
@@ -27,7 +28,7 @@ console.log(cartItem);
 
   return (
     <>
-   <Title>
+  <Title></Title>
    <section className="container pt-20 flex w-full justify-between flex-col lg:flex lg:flex-row gap-5 max-w-[1400px] mx-auto">
         <div
           id="productContainer"
@@ -104,7 +105,7 @@ console.log(cartItem);
           </div>
         </div>
       </section>
-   </Title>
+
     </>
   );
 }
